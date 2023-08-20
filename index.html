@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Challenge</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="layout">
+      <!-- #01 -->
+      <div>
+        <div>
+          <form class="hidden" id="login-form">
+            <input
+              required
+              maxlength="15"
+              type="text"
+              placeholder="Whis is your name?"
+            />
+            <input type="submit" value="Hello!" />
+          </form>
+          <h1 class="hidden" id="greeting"></h1>
+        </div>
+        <div id="weather">
+          <!-- <img /> -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- #02 -->
+      <div>
+        <h1 id="clock" style="font-feature-settings: 'ss01'">00:00:00</h1>
+      </div>
+      <!-- #03 -->
+      <div id="favorites">
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- #04 -->
+      <div id="todo">
+        <form id="todo-form">
+          <input
+            type="text"
+            maxlength="22
+            "
+            placeholder="Write a To Do and Press enter."
+            required
+          />
+        </form>
+        <div>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
